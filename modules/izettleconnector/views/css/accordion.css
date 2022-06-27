@@ -1,0 +1,177 @@
+/*
+ * 2020 Zettle Prestashop Connector
+ *  @author    : Zettle
+ *  @copyright : 2020 Zettle
+ *  @license   : MIT
+ *  @contact   : prestashop.com
+ *  @homepage  : zettle.com
+ *
+ */
+
+
+
+.heading-primary {
+    font-size: 2em;
+    padding: 2em;
+    text-align: center;
+}
+
+.accordion dl,
+.accordion-list {
+    border: 1px solid #ddd;
+}
+.accordion dl:after,
+.accordion-list:after {
+    content: "";
+    display: block;
+    height: 1em;
+    width: 100%;
+
+}
+
+.accordion dd,
+.accordion__panel {
+    background-color: #eee;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.accordion p {
+    padding: 1em 2em 1em 2em;
+}
+
+.accordion {
+    position: relative;
+    background-color: #eee;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2em 0 2em 0;
+}
+
+.accordionTitle,
+.accordion__Heading {
+
+    text-align: center;
+    font-weight: 700;
+    padding: 2em;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.5s ease-in-out;
+
+}
+.accordionTitle:before,
+.accordion__Heading:before {
+    content: "+";
+    font-size: 1.5em;
+    line-height: 0.5em;
+    float: left;
+    transition: transform 0.3s ease-in-out;
+}
+.accordionTitle:hover,
+.accordion__Heading:hover {
+
+}
+
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+
+}
+.accordionTitleActive:before,
+.accordionTitle.is-expanded:before {
+    transform: rotate(-225deg);
+}
+
+.accordionItem {
+    height: auto;
+    overflow: hidden;
+    max-height: 50em;
+    transition: all 1s;
+}
+@media screen and (min-width: 48em) {
+    .accordionItem {
+        max-height: 15em;
+        transition: all 0.5s;
+    }
+}
+
+.accordionItem.is-collapsed {
+    max-height: 0;
+
+}
+
+
+
+.animateIn {
+    animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+
+.animateOut {
+    animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+
+@keyframes accordionIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) rotateX(-60deg);
+        transform-origin: 50% 0;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes accordionOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.9) rotateX(-60deg);
+    }
+}
+.accordionTitle::before{
+    content:'\f078';
+    font-family:FontAwesome;
+    margin-right: 9px;
+    font-size: 14px;
+    padding-top: 6px;
+}
+
+/*.is-collapsed::before{*/
+/*  content:'\f077';*/
+/*  font-family:FontAwesome;*/
+/*  margin-right:5px;*/
+/*}*/
+
+dd.accordion-content {
+    padding: 10px;
+    border-left: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+}
+
+dd.is-collapsed {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.accordionTitle, .accordion__Heading {
+    background-color: #f4f4f4;
+    text-align: left;
+    font-weight: 700;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #4B2E1E;
+    transition: background-color 0.5s ease-in-out;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+
+.izettle-help dt {
+    margin: 3px
+}

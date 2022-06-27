@@ -1,0 +1,289 @@
+/**
+ * 2007-2022 ETS-Soft
+ *
+ * NOTICE OF LICENSE
+ *
+ * This file is not open source! Each license that you purchased is only available for 1 web site only.
+ * If you want to use this file on more web sites (or projects), you need to purchase additional licenses.
+ * You are not allowed to redistribute, resell, lease, license, sub-license or offer our resources to any third party.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future. If you wish to customize PrestaShop for your
+ * needs please contact us for extra customization service at an affordable price
+ *
+ * @author ETS-Soft <etssoft.jsc@gmail.com>
+ * @copyright  2007-2022 ETS-Soft
+ * @license    Valid for 1 web site (or project) for each purchase of license
+ *  International Registered Trademark & Property of ETS-Soft
+ */
+.ets-sc-img-upload.img_base .ets-sc-drag-drop-upload-file svg {
+    opacity: 0;
+}
+.ets-sc-img-upload.img_base .ets-sc-thumbnail-wrapper {
+    pointer-events: none;
+}
+.ets-sc-btn-edit,
+a.ets-sc-btn-delete {
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    line-height: 20px;
+    text-align: center;
+}
+.ets-sc-btn-edit:hover, a.ets-sc-btn-delete:hover {
+    color: #25b9d7;
+    fill: #25b9d7;
+}
+button.btn.btn-primary svg {
+    fill: inherit;
+    color: inherit;
+}
+button.btn.btn-primary {
+    color: #fff;
+    fill: #fff;
+}
+.ets-sc-list-item {
+    padding: 10px 0;
+    margin: 10px 0px;
+}
+button.btn, a.btn {
+    outline: none!important;
+    text-decoration: none!important;
+}
+button.btn span.ets-sc-title {
+    outline: none!important;
+}
+.ets-sc-list-item.heading {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.ets-sc-drag-drop-upload-file {
+    padding: 20px;
+    border: 1px dashed #ccc;
+    cursor: pointer;
+    display: inline-flex;
+    margin-right: 0px;
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.ets-sc-thumbnail-wrapper {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    float: left;
+}
+.table-heading .column, .listing-row .column, .table-tfoot .column {
+    padding: 10px;
+}
+button.btn.btn-primary.active svg,
+span.ets-sc-btn-edit.active svg,
+a.ets-sc-btn-delete.active svg{
+    opacity: 0;
+}
+.ets-sc-drag-drop-upload-file svg {
+    width: 24px;
+    height: 24px;
+    fill: #777;
+}
+.ets-sc-drag-drop-upload-file:hover {
+    border-color: #25b9d7;
+}
+.ets-sc-drag-drop-upload-file:hover svg {
+    fill: #25b9d7;
+    color: #25b9d7;
+}
+button.btn.btn-primary.active{
+    background: #1e94ab;
+    border-color: #1e94ab;
+    color: transparent;
+    position: relative;
+}
+button.btn.btn-primary.active:after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-left: 1px solid transparent !important;
+    border-right: 1px solid transparent !important;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -9px;
+    margin-top: -9px;
+    top: 50%;
+    animation: loading 0.5s infinite linear;
+    -webkit-animation: loading 0.5s infinite linear;
+}
+span.ets-sc-btn-edit.active:after,
+a.ets-sc-btn-delete.active:after{
+    content: "";
+    position: absolute;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid transparent !important;
+    border-right: 1px solid transparent !important;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    top: 50%;
+    animation: loading 0.5s infinite linear;
+    -webkit-animation: loading 0.5s infinite linear;
+}
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes loading {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+.list-images {
+    display: table;
+    position: relative;
+    margin-bottom: 60px;
+    width: 100%;
+    border-left: 1px solid #ccc;
+}
+.list-images .table-heading {
+    display: table-row;
+}
+.ets-sc-img-upload {
+    display: inline-block;
+    margin-bottom: 8px;
+    position: relative;
+    width: 80px;
+}
+.ets-sc-thumbnail-wrapper img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-width: 78px;
+    max-height: 78px;
+    transform: translate3d(-50%,-50%,0);
+    -webkit-transform: translate3d(-50%,-50%,0);
+    margin-left: 0;
+}
+.list-images .column {
+    display: table-cell;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.list-images .table-heading .column {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 10px;
+    background: #fafafa;
+    border-top: 1px solid #ccc;
+}
+.list-images .table-body {
+    display: table-row-group;
+}
+
+.list-images .listing-row {
+    display: table-row;
+}
+
+.table-footer {
+    display: table-row-group;
+}
+.list-images .column.center {
+    text-align: center;
+}
+.table-footer form#list-ets-sc-certification {
+    display: table-row;
+}
+.table-tfoot {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 15px;
+}
+button.btn.btn-default:hover {
+    fill: #fff;
+    color: #fff;
+}
+svg.w_14.h_14 {
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: -2px;
+}
+span.ets-sc-tooltip {
+    background: #666;
+    min-width: 16px;
+    display: inline-block;
+    min-height: 16px;
+    border-radius: 50px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 16px;
+    font-weight: 600;
+    margin-left: 8px;
+    font-size: 10px;
+    position: relative;
+}
+span.ets-sc-tooltip-content {
+    position: absolute;
+    bottom: 100%;
+    display: none;
+    background: #333333;
+    font-weight: normal;
+    min-width: 180px;
+    padding: 6px;
+    border-radius: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    pointer-events: none;
+    cursor: pointer;
+}
+span.ets-sc-tooltip-content:before {
+    content: "";
+    border-top: 5px solid #333333;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+span.ets-sc-tooltip:hover {
+    background: #333;
+}
+span.ets-sc-tooltip:hover .ets-sc-tooltip-content {
+    display: block;
+}
+
+
+
+
+

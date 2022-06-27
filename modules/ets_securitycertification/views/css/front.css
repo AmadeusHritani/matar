@@ -1,0 +1,78 @@
+/**
+ * 2007-2022 ETS-Soft
+ *
+ * NOTICE OF LICENSE
+ *
+ * This file is not open source! Each license that you purchased is only available for 1 web site only.
+ * If you want to use this file on more web sites (or projects), you need to purchase additional licenses.
+ * You are not allowed to redistribute, resell, lease, license, sub-license or offer our resources to any third party.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future. If you wish to customize PrestaShop for your
+ * needs please contact us for extra customization service at an affordable price
+ *
+ * @author ETS-Soft <etssoft.jsc@gmail.com>
+ * @copyright  2007-2022 ETS-Soft
+ * @license    Valid for 1 web site (or project) for each purchase of license
+ *  International Registered Trademark & Property of ETS-Soft
+ */
+.ets-sc-certification-item {
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.ets-sc-certification.ets-sc-position-at-displaynav1 .ets-sc-heading {
+    cursor: auto;
+    font-weight: 600;
+    pointer-events: none;
+}
+.ets-sc-certification.ets-sc-position-at-displaybanner .ets-sc-heading,
+.ets-sc-certification.ets-sc-position-at-displaybanner .ets-sc-certification-item {
+    display: inline-block;
+    margin-bottom: 0;
+}
+.ets-sc-position-at-displayfooterafter .ets-sc-heading, .ets-sc-position-at-displayfooterafter .ets-sc-certification-item {
+    display: inline-block;
+    margin-right: 25px;
+}
+.ets-sc-certification-item img {
+    max-height: 80px;
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
+.ets-sc-position-at-displayfooterafter {
+    text-align: center;
+}
+.ets-sc-certification.ets-sc-position-at-displaybanner {
+    text-align: center;
+    padding: 5px;
+    float: none;
+    border-bottom: 1px solid #eee;
+}
+.ets-sc-position-at-displaynav1 h4.ets-sc-heading {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+}
+.ets-sc-position-at-displaynav1 .ets-sc-certification-item:not(:last-child) {
+    margin-right: 10px;
+}
+.ets-sc-certification.ets-sc-position-at-displaynav1 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.ets-sc-position-at-displaynav1 .ets-sc-certification-item {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.ets-sc-certification-items-footer{
+    padding: 10px 0;
+}
+@media (max-width: 767px){
+    .ets-sc-certification.hidden-on-mobile {
+        display: none!important;
+    }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ph_products_cms</name>
+    <displayName><![CDATA[Products on CMS or anywhere]]></displayName>
+    <version><![CDATA[1.0.4]]></version>
+    <description><![CDATA[Display selected products on CMS pages, product description, or .tpl file using short code.]]></description>
+    <author><![CDATA[ETS-Soft]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

@@ -1,0 +1,175 @@
+/*
+ * 2020 Zettle Prestashop Connector
+ *  @author    : Zettle
+ *  @copyright : 2020 Zettle
+ *  @license   : MIT
+ *  @contact   : prestashop.com
+ *  @homepage  : zettle.com
+ *
+ */
+
+.bootstrap .izettle .table tbody > tr > td {
+    font-size: 14px;
+}
+
+#categories-tree {
+    max-height: 350px;
+    height: 350px;
+    overflow: auto;
+}
+.run-container a {
+    text-decoration: underline;
+    color: #5538ba;
+}
+#status-container {
+    padding: 15px;
+    text-align: center;
+}
+#continue-button{
+    text-transform: none;
+}
+
+#smartwizard .tab-content {
+    min-height: 335px
+}
+
+.bold {
+    font-weight: bold;
+}
+.progressbar {
+    background-color: white;
+    border-radius: 13px;
+    padding: 2px;
+    border: solid 1px #5538ba;
+    overflow: hidden;
+}
+
+.progressbar > div {
+    background-color: #5538ba;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.task-info {
+    padding: 15px 15px 5px;
+    text-align: left;
+    border-radius: 5px;
+    border: solid 1px #5538ba;
+    margin-bottom: 15px;
+}
+
+.task-action_desc {
+    border: none !important;
+    text-align: center;
+    padding-top: 10px !important;
+}
+
+.progressbar-container {
+    padding: 20px;
+}
+
+.task-state_name {
+    border-radius: 3px;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 1px 5px;
+}
+
+.task-state-running  .task-state_name {
+    background-color: #5538ba;
+    color: white
+}
+
+.task-state-undone .progressbar {
+    border: solid 1px #0f62de;
+}
+
+.task-state-undone .progressbar > div, .task-state-undone .task-state_name {
+    background-color: #0f62de;
+    color: white
+}
+
+.task-state-undone .task-info {
+    border: solid 1px #0f62de;
+}
+
+.task-state-undo_running .progressbar {
+    border: solid 1px #0A246A;
+}
+
+.task-state-undo_running .progressbar > div, .task-state-undo_running .task-state_name {
+    background-color: #0A246A;
+    color: white
+}
+
+.task-state-undo_running .task-info {
+    border: solid 1px #0A246A;
+}
+
+
+.task-state-finished .progressbar {
+    border: solid 1px #60cb83;
+
+}
+
+.task-state-finished .progressbar > div, .task-state-finished .task-state_name {
+    background-color: #60cb83;
+    color: white
+}
+
+.task-state-finished .task-info {
+    border: solid 1px #60cb83;
+}
+
+
+.task-state-ready .progressbar,.task-state-stopped .progressbar {
+    border: solid 1px #aaaaaa;
+}
+
+.task-state-ready .progressbar > div, .task-state-stopped .progressbar > div, .task-state-ready .task-state_name {
+    background-color: #aaaaaa;
+    color: white
+}
+
+.task-state-ready .task-info,.task-state-stopped .task-info {
+    border: solid 1px #aaaaaa;
+}
+
+
+.task-state-error .progressbar {
+    border: solid 1px #ff0000;
+}
+
+.task-state-error .progressbar > div,  .task-state-error .task-state_name {
+    background-color: #ff0000;
+    color: white
+}
+
+.task-state-error .task-info {
+    border: solid 1px #ff0000;
+}
+
+
+.task-state-cancelled .progressbar {
+    border: solid 1px gold;
+}
+
+.task-state-cancelled .progressbar > div, .task-state-cancelled .task-state_name  {
+    background-color: gold;
+}
+
+.task-state-cancelled .task-info {
+    border: solid 1px gold;
+}
+
+.task-state-paused .progressbar {
+    border: solid 1px gold;
+}
+
+.task-state-paused .progressbar > div, .task-state-paused .task-state_name  {
+    background-color: gold;
+}
+
+.task-state-paused .task-info {
+    border: solid 1px gold;
+}

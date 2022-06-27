@@ -1,0 +1,281 @@
+/*
+ * 2020 Zettle Prestashop Connector
+ *  @author    : Zettle
+ *  @copyright : 2020 Zettle
+ *  @license   : MIT
+ *  @contact   : prestashop.com
+ *  @homepage  : zettle.com
+ *
+ */
+
+
+.customradiobutton-container {
+    width: 100%;
+    height: auto;
+}
+
+.customradiobutton-container .option{
+    text-align: center;
+}
+.customradiobutton-container small{
+    display: block;
+}
+
+.customradiobutton-container [type="radio"] {
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+}
+.customradiobutton-container [type="radio"] ~ label {
+    border: 2px solid #e5e1fd;
+
+
+}
+.customradiobutton-container [type="radio"]:checked ~ label {
+    border-color: #5538ba;
+    background: #f4f3ff;
+
+
+}
+.customradiobutton-container [type="radio"]:checked ~ label:before {
+    will-change: transform, border-width, border-color;
+    -webkit-animation: bubble 1s ease-in;
+    animation: bubble 1s ease-in;
+}
+.customradiobutton-container [type="radio"]:checked ~ label:after {
+    will-change: opacity, box-shadow;
+    -webkit-animation: sparkles 700ms ease-in-out;
+    animation: sparkles 700ms ease-in-out;
+}
+.customradiobutton-container [type="radio"]:checked ~ label > span {
+    border: 2px solid #5538ba;
+    will-change: transform;
+    -webkit-animation: radio 400ms cubic-bezier(0.17, 0.89, 0.32, 1.49);
+    animation: radio 400ms cubic-bezier(0.17, 0.89, 0.32, 1.49);
+}
+.customradiobutton-container [type="radio"]:checked ~ label > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: #5538ba;
+}
+
+.customradiobutton-container label {
+    position: relative;
+    padding: 10px 20px 10px 45px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    -webkit-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+    /*min-width: 500px;*/
+    text-align: left;
+}
+.customradiobutton-container label:hover {
+    border-color: #5538ba;
+    background-color: white;
+}
+.customradiobutton-container label:before, .customradiobutton-container label:after {
+    position: absolute;
+    left: 29px;
+    border-radius: 50%;
+    content: "";
+}
+.customradiobutton-container label:before {
+    margin: -2rem;
+    border: solid 2rem #545461;
+    width: 4rem;
+    height: 4rem;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.customradiobutton-container label > span {
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid #bbbbbb;
+}
+
+
+.customradiobutton-container .option:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+@-webkit-keyframes radio {
+    0%,
+    17.5% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+@keyframes radio {
+    0%,
+    17.5% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+.toggle-container {
+    display: inline-block;
+    padding: 2px;
+
+    border: 2px solid #e5e1fd;
+    border-radius: 10px;
+}
+.toggle-container .btn-toggle {
+    color: #6c4fd4;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 7px 0px;
+    margin: 1px;
+    position: relative;
+    text-align: center;
+    -webkit-transition: background 600ms ease, color 600ms ease;
+    transition: background 600ms ease, color 600ms ease;
+}
+.toggle-container input[type="radio"].toggle {
+    display: none;
+    border-radius: 8px;
+}
+.toggle-container input[type="radio"].toggle + label {
+    cursor: pointer;
+    min-width: 60px;
+    z-index: 1;
+}
+.toggle-container input[type="radio"].toggle + label:hover {
+    background: none;
+    color: #1a1a1a;
+}
+.toggle-container input[type="radio"].toggle + label:after {
+
+    border-radius: 8px;
+    background: #785ddc;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    -webkit-transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+    width: 100%;
+    z-index: -1;
+}
+.toggle-container input[type="radio"].toggle.toggle-left + label {
+    border-right: 0;
+}
+.toggle-container input[type="radio"].toggle.toggle-left + label:after {
+    left: 100%;
+    /*z-index: -4;*/
+}
+.toggle-container input[type="radio"].toggle.toggle-right + label {
+    margin-left: -5px;
+}
+
+.toggle-container input[type="radio"].toggle.toggle-right + label:after {
+    left: -100%;
+    /*display: none;*/
+}
+
+.toggle-container input[type="radio"].toggle:checked + label {
+    cursor: default;
+    color: #fff;
+    -webkit-transition: color 200ms;
+    transition: color 200ms;
+}
+
+.toggle-container input[type="radio"].toggle:checked + label:after {
+    left: 0;
+    /*display: inherit!important;*/
+}
+
+.toggle-container input[type="radio"].toggle.toggle-right:checked + label {
+    z-index: 2;
+}
+.toggle-container input[type="radio"].toggle.toggle-left:checked + label {
+    z-index: 2;
+}
+
+
+@keyframes click-wave {
+    0% {
+        height: 20px;
+        width: 20px;
+        opacity: 0.35;
+        position: relative;
+    }
+    100% {
+        height: 30px;
+        width: 30px;
+        margin-left: -5px;
+        margin-top: -5px;
+        opacity: 0;
+    }
+}
+
+.option-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+
+    appearance: none;
+    position: relative;
+    top: 13.33333px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    transition: all 0.15s ease-out 0s;
+    background: none;
+    border: 1px solid #cbd1d8;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+border-radius: 3px;
+    outline: none;
+    position: relative;
+
+}
+.option-input:hover {
+
+    border: 1px solid #785ddc;
+}
+.option-input:checked {
+    background: #785ddc;
+    border: 1px solid #785ddc;
+}
+.option-input:checked::before {
+    position: absolute;
+    left: 5px;
+    content: '';
+    top: -1px;
+
+    width: 8px;
+    height: 15px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+}
+.option-input:checked::after {
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    background: #785ddc;
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
