@@ -1,0 +1,23 @@
+$component-name: search-filters;
+
+.#{$component-name} {
+  & &-subtitle {
+    // stylelint-disable-next-line
+    width: auto !important;
+  }
+
+  .noUi-horizontal {
+    margin-bottom: 2rem;
+
+    .noUi-handle {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .facet-dropdown {
+    cursor: pointer;
+  }
+}
